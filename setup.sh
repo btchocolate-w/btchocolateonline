@@ -30,14 +30,8 @@ NODE_ENV=development
 PORT=5000
 REACT_APP_API_URL=http://localhost:5000
 
-FIREBASE_PROJECT_ID=btchocolateonline-w
-FIREBASE_API_KEY=AIzaSyBtECn9P5sQlZgqTDsQ8YgYCw9KucgqkF4
-FIREBASE_AUTH_DOMAIN=btchocolateonline-w.firebaseapp.com
-FIREBASE_STORAGE_BUCKET=btchocolateonline-w.firebasestorage.app
-FIREBASE_MESSAGING_SENDER_ID=681766069180
-FIREBASE_APP_ID=1:681766069180:web:db666cb8cb99dfb27841b9
 
-JWT_SECRET=btchocolate_jwt_secret_2026_key_do_not_share
+
 
 WHATSAPP_PHONE_NUMBER=36923388
 EOF
@@ -60,13 +54,7 @@ echo ""
 if [ ! -f .env ]; then
     echo "Creating .env file for frontend..."
     cat > .env << EOF
-REACT_APP_API_URL=http://localhost:5000/api
-REACT_APP_FIREBASE_API_KEY=AIzaSyBtECn9P5sQlZgqTDsQ8YgYCw9KucgqkF4
-REACT_APP_FIREBASE_AUTH_DOMAIN=btchocolateonline-w.firebaseapp.com
-REACT_APP_FIREBASE_PROJECT_ID=btchocolateonline-w
-REACT_APP_FIREBASE_STORAGE_BUCKET=btchocolateonline-w.firebasestorage.app
-REACT_APP_FIREBASE_MESSAGING_SENDER_ID=681766069180
-REACT_APP_FIREBASE_APP_ID=1:681766069180:web:db666cb8cb99dfb27841b9
+
 EOF
     echo "✅ Frontend .env created"
 else
