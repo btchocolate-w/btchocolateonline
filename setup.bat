@@ -34,12 +34,7 @@ if not exist .env (
         echo PORT=5000
         echo REACT_APP_API_URL=http://localhost:5000
         echo.
-        echo FIREBASE_PROJECT_ID=btchocolateonline-w
-        echo FIREBASE_API_KEY=AIzaSyBtECn9P5sQlZgqTDsQ8YgYCw9KucgqkF4
-        echo FIREBASE_AUTH_DOMAIN=btchocolateonline-w.firebaseapp.com
-        echo FIREBASE_STORAGE_BUCKET=btchocolateonline-w.firebasestorage.app
-        echo FIREBASE_MESSAGING_SENDER_ID=681766069180
-        echo FIREBASE_APP_ID=1:681766069180:web:db666cb8cb99dfb27841b9
+     
         echo.
         echo JWT_SECRET=btchocolate_jwt_secret_2026_key_do_not_share
         echo.
@@ -64,13 +59,7 @@ REM Create .env for frontend if it doesn't exist
 if not exist .env (
     echo Creating .env file for frontend...
     (
-        echo REACT_APP_API_URL=http://localhost:5000/api
-        echo REACT_APP_FIREBASE_API_KEY=AIzaSyBtECn9P5sQlZgqTDsQ8YgYCw9KucgqkF4
-        echo REACT_APP_FIREBASE_AUTH_DOMAIN=btchocolateonline-w.firebaseapp.com
-        echo REACT_APP_FIREBASE_PROJECT_ID=btchocolateonline-w
-        echo REACT_APP_FIREBASE_STORAGE_BUCKET=btchocolateonline-w.firebasestorage.app
-        echo REACT_APP_FIREBASE_MESSAGING_SENDER_ID=681766069180
-        echo REACT_APP_FIREBASE_APP_ID=1:681766069180:web:db666cb8cb99dfb27841b9
+      
     ) > .env
     echo ✅ Frontend .env created
 ) else (
@@ -92,3 +81,4 @@ echo    Master Admin: JITHESH / Amaya#3452
 echo    Admin: BTMANAGER / BT39115252
 echo.
 pause
+
